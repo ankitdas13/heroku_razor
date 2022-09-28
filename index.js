@@ -1,7 +1,7 @@
 const express = require("express")
 const Razorpay = require("razorpay")
 const app = express();
-const port = process.env.Port || 5000
+var port = process.env.Port || 5000
 
 app.get("/", async (req,res)=>{
     // var instance = new Razorpay({
@@ -11,7 +11,7 @@ app.get("/", async (req,res)=>{
 
     // var orders = await instance.orders.all();
 
-    res.send("hiiiiiiiiiiiiii");
+    res.send("hiiiiiiiii");
 })
 
 app.listen(port,()=>{console.log("port listen")})
