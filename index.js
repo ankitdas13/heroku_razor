@@ -2,7 +2,7 @@ const express = require("express")
 const Razorpay = require("razorpay")
 const app = express();
 
-app.get("/test", async (req,res)=>{
+app.get("/", async (req,res)=>{
     var instance = new Razorpay({
         key_id: 'rzp_test_xMpBchciV4VQSE',
         key_secret: 'ecwPEz6hRmTTMapOx733NLEB',
